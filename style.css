@@ -35,13 +35,52 @@ list-style:none;
 }
 
 .sidebar li{
-padding:10px 0;
+padding:10px;
 color:#cfd8dc;
 cursor:pointer;
+transition:0.3s;
 }
 
 .sidebar li:hover{
 color:#1de9b6;
+padding-left:6px;
+}
+
+/* dashboard */
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#0b1220;
+border-bottom:1px solid #1f2937;
+}
+
+.page-title{
+font-size:18px;
+color:#00ffc8;
+font-weight:bold;
+}
+
+.user-menu{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.avatar{
+width:35px;
+height:35px;
+border-radius:50%;
+}
+
+
+.sidebar li.active{
+color:#00ffc8;
+border-left:3px solid #00ffc8;
+background:#0b1220;
+padding-left:7px;
 }
 
 /* Main */
@@ -123,6 +162,15 @@ transform:scale(1.05);
 opacity:1;
 }
 
+.hero-card{
+transition:0.3s;
+}
+
+.hero-card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 15px #00ffc8;
+}
+
 .hero-img{
 width:90px;
 height:90px;
@@ -154,6 +202,31 @@ transition:0.2s;
 .item-build img:hover{
 transform:scale(1.15);
 box-shadow:0 0 10px #1de9b6;
+}
+
+/* hero tier */
+
+.tier-section{
+margin-bottom:40px;
+}
+
+.tier-title{
+text-align:left;
+margin-bottom:15px;
+font-size:22px;
+padding-left:10px;
+}
+
+.tier-title.s{
+color:#ff4d4d;
+}
+
+.tier-title.a{
+color:#ffaa00;
+}
+
+.tier-title.b{
+color:#4da6ff;
 }
 
 /* Responsive HP */
